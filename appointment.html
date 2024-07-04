@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janji Temu - Sehat Sentosa Hospital</title>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+</head>
+<body>
+    <header>
+        <h1>Sehat Sentosa Hospital</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="appointment.html">Janji Temu</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Buat Janji Temu</h2>
+
+        <!-- Form untuk input data janji temu -->
+        <form action="save_reservation.php" method="POST">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="name">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="doctor">Dokter:</label>
+            <select id="doctor" name="doctor" required>
+                <option value="">Pilih Dokter</option>
+                <option value="Dr. Hasan">Dr. Hasan</option>
+                <option value="Dr. Abil">Dr. Abil</option>
+                <option value="Dr. Vita">Dr. Vita</option>
+                <option value="Dr. Jenny">Dr. Jenny</option>
+                <option value="Dr. Jonny">Dr. Jonny</option>
+                <option value="Dr. Sinta">Dr. Sinta</option>
+                <!-- Tambahkan opsi dokter di sini -->
+            </select>
+
+            <label for="date">Tanggal:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Waktu:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Simpan Janji Temu</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sehat Sentosa Hospital. </p>
+    </footer>
+</body>
+</html>
